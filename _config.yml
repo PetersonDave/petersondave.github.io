@@ -8,7 +8,7 @@ logo: false
 paginate: 15
 
 # Details for the RSS feed generator
-url:            'https://petersondave.github.io'
+url:            'http://petersondave.com'
 author:         'David Peterson'
 
 kramdown:
