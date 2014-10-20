@@ -8,8 +8,8 @@ logo: false
 paginate: 15
 
 # Details for the RSS feed generator
-url:            'blog url'
-author:         'Your Name'
+url:            'https://petersondave.github.io'
+author:         'David Peterson'
 
 kramdown:
     input: GFM
