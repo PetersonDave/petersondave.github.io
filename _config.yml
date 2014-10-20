@@ -2,8 +2,8 @@ name: David Peterson
 description: A Sitecore Development and Research Blog
 meta_description: "A Sitecore Development and Research Blog"
 
-markdown: kramdown
-highlighter: rouge
+markdown: redcarpet
+highlighter: pygments
 logo: false
 paginate: 15
 
