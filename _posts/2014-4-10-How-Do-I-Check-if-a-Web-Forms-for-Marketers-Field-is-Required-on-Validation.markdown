@@ -3,6 +3,7 @@ layout: post
 title:  "How Do I Check if a Web Forms for Marketers Field is Required on Validation?"
 date:   2014-4-10 10:18:00
 categories: Sitecore WFFM
+comments: true
 ---
 
 When within the context of a WFFM field custom validator, determining whether or not a field is required may not be a straight-forward task. Understand that within the context of the validator, there are two ways of obtaining an instance of a form:

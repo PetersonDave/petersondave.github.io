@@ -1,55 +1,28 @@
 ---
-# Let's add a comment to make this file sass-y.
+sitemap: false
 ---
 
-/* Font size of 2.0 is too big, I'll reduce it */
-body {
-	font-size: 1.9rem;
-}
+/*
+ *
+ *  Minimal Mistakes
+ *
+ *  Designer: Michael Rose
+ *  Twitter: http://twitter.com/mmistakes
+ *
+*/
 
-/* Adding some text shadow*/
-.site-head {
-	text-shadow: 2px 2px #234;
-
-	a {
-		color: #eee;
-	}
-}
-
-/* The font is too large in the post view. Revert to small size*/
-.post-header .blog-title {
-	font-size: inherit;
-}
-
-/* Reduce font size and add line-height*/
-pre {
-	font-size: 0.75em;  
-	line-height: 1.4em;
-}
-
-/* Author styling */
-.author {
-	margin-bottom: 1em;
-
-	header {
-		float: left;
-		width: 80px;
-	}
-
-	article {
-		margin-left: 80px;
-		min-height: 80px;
-		padding-left: 20px;
-	}
-}
-
-img.profile {
-	width: 80px;
-	height: auto;
-  	border-radius: 50px;
-}
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-	"syntax"
-;
+// Partials
+@import "variables";
+@import "grid";
+@import "mixins";
+@import "normalize";
+@import "site";
+@import "typography";
+@import "pygments";
+@import "coderay";
+@import "elements";
+@import "forms";
+@import "page";
+@import "vendor/font-awesome/font-awesome";
+@import "vendor/magnific-popup/magnific-popup";
+//@import "vendor/google/fonts";

@@ -3,6 +3,7 @@ layout: post
 title:  "Trigger Google Analytics Events on Sitecore Web Forms for Marketers Submit Actions"
 date:   2013-10-10 10:18:00
 categories: Sitecore WFFM
+comments: true
 ---
 
 Suppose we wan to record an event in Google Analytics when successfully submitting forms. Before triggering our Google Analytics event, we first need to understand the different success modes:

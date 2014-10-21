@@ -3,6 +3,7 @@ layout: post
 title:  "Building a Single Page Application with AngularJS and Sitecore: Part 2"
 date:   2013-11-25 10:18:00
 categories: Sitecore AngularJS
+comments: true
 ---
 
 In the second and final in a series of posts related to AngularJS and Sitecore, we'll explore Angular in a Sitecore context. By running Angular within a Sitecore instance, we're pairing the speed of Angular with dynamic rendering of Sitecore, opening our discussion to multiple interesting scenarios.

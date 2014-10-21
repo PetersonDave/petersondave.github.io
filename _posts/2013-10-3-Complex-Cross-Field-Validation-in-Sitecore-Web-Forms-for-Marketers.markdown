@@ -3,6 +3,7 @@ layout: post
 title:  "Complex Cross-Field Validation in Sitecore Web Forms for Marketers"
 date:   2013-10-3 10:18:00
 categories: Sitecore WFFM
+comments: true
 ---
 
 Web Forms for Marketers (WFFM) offers multiple ways to validate form data prior to executing the Form Submit Actions. Outlined below are various methods to validating form data given the level of complexity required in your validation rules.

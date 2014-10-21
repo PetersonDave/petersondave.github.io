@@ -1,15 +1,57 @@
-name: David Peterson
-description: A Sitecore Development and Research Blog
-meta_description: "A Sitecore Development and Research Blog"
+# Site wide configuration
 
-markdown: redcarpet
-highlighter: pygments
-logo: false
-paginate: 15
-
-# Details for the RSS feed generator
+title:            David Peterson
+locale:           en_US
 url:            'http://petersondave.com'
-author:         'David Peterson'
+
+
+# Jekyll configuration
+
+permalink:   /:categories/:title/
+markdown: kramdown
+highlighter: pygments
+sass:
+  sass_dir: _sass
+  style: compressed
+gems:
+  - jekyll-sitemap
 
 kramdown:
-    input: GFM
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: false
+
+
+# Site owner
+owner:
+  name: David Peterson
+  avatar: bio-photo.jpg
+  bio: "David is a Senior Software Engineer with ISITE Design, founder of the Philadelphia Sitecore Users Group and Technical Sitecore MVP. Often reminiscing of his days as a Sysop and being Elite."
+  email: david.scott.peterson@gmail.com
+  disqus-shortname: petersondave
+  twitter: PetersonDave
+  facebook: #username
+  google:
+    plus: #username
+    analytics: UA-55942315-1
+    verify: 
+    ad-client: 
+    ad-slot: 
+  bing-verify: 
+  github: petersondave
+  stackoverflow: #http://stackoverflow.com/users/123456/username
+  linkedin: petersond
+  instagram: #username
+  lastfm: #username
+  tumblr: #username
+  pinterest: #username
+  foursquare: #username
+  steam: #username
+  dribbble: #username
+  youtube: #username
+  soundcloud: #username
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]

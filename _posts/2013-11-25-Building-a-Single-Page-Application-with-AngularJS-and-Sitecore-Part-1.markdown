@@ -3,6 +3,7 @@ layout: post
 title:  "Building a Single Page Application with AngularJS and Sitecore: Part 1"
 date:   2013-11-25 10:18:00
 categories: Sitecore AngularJS
+comments: true
 ---
 
 During the November meetup of the Philadelphia Area Sitecore User Group, we explored the possibilities of using Angular with Sitecore. Two options were explored. The first, building a SPA with Angular and Sitecore Item Web API and finally, Integrating Angular into a Sitecore instance. This post, the first in a series of two related posts, discusses the Sitecore Item Web API implementation.

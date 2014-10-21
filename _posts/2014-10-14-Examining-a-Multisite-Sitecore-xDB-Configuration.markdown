@@ -3,6 +3,7 @@ layout: post
 title:  "Examining a Multisite Sitecore xDB Configuration"
 date:   2014-10-14 10:18:00
 categories: Sitecore xDB
+comments: true
 ---
 
 With the introduction of The Experience Database (xDB) in Sitecore 7.5, MongoDB hosts the primary repository of web activity across Sitecore backed websites. Web visitors, now known as contacts, are captured along with each page view (Interactions in xDB) generated in a given browsing session. Much like its predecessor, DMS, the new xDB separates web activity by site.
@@ -57,7 +58,7 @@ While browsing Launch Sitecore, suppose we login, recognizing the current browsi
 
 ![session 1 details](/assets/images/session1-details.png)
 
-Notice how the previous page views (xDB interactions) are now tagged with the contact id of the logged in user. Launch Sitecore programmatically identifying the contact is below. The line of code we're most interested in is Tracker.Current.Session.Identify(domainUser).
+Notice how the previous page views (xDB interactions) are now tagged with the contact id of the logged in user. Launch Sitecore programmatically identifying the contact is below. The line of code we're most interested in is `Tracker.Current.Session.Identify(domainUser)`.
 
 {% highlight c# %}
 string name = Sitecore.Context.User.Profile.FullName;

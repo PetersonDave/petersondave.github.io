@@ -3,6 +3,7 @@ layout: post
 title:  "Sitecore Web Forms for Marketers Password Confirmation Field"
 date:   2013-9-21 10:18:00
 categories: Sitecore WFFM
+comments: true
 ---
 
 Sitecore's Web Forms for Marketers contains a <em>Password Confirmation</em> complex field for accepting and validating both a password and password confirmation. The out-of-the-box configuration orders the required validators as:

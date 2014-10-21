@@ -3,6 +3,7 @@ layout: post
 title:  "Hacking Sitecore Web Forms with Razor Views for Marketers and Blade"
 date:   2014-7-24 10:18:00
 categories: Sitecore WFFM
+comments: true
 ---
 
 [Web Forms for Marketers](http://sdn.sitecore.net/Products/Web%20Forms%20for%20Marketers.aspx) provides flexibility on part of content editors to create and manipulate simple forms for collecting user data. While there's a great deal of flexibility on the back-end, customizing the format and layout of the form can sometimes be a more difficult task.

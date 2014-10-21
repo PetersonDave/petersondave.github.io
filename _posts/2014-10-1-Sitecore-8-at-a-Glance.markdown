@@ -3,6 +3,7 @@ layout: post
 title:  "Sitecore 8 at a Glance"
 date:   2014-10-1 10:18:00
 categories: Sitecore Sitecore8
+comments: true
 ---
 
 With the release of the Sitecore 8 MVP Technical Preview, many of the features showcased during Sitecore Symposium 2014 were made available for review. The focus of this post is to detail high-level changes between Sitecore 7.5 and the technical preview of Sitecore 8.
@@ -145,7 +146,7 @@ Outside of Analytics, <em>Sitecore.ContentTesting.config</em> changes dominate t
 * Database Agent (background processing to determine if a test has reached statistical relevancy)
 * Content Testing provider (used by ItemManager)
 
-The ItemManager's default item provider is now the content testing item provider, which is essentially a wrapper of the existing <em>Sitecore.Data.Managers.ItemProvider</em> overriding <em>GetItem()</em>. It is here where other versions/variations of items used via Content Testing are obtained for rendering.
+The ItemManager's default item provider is now the content testing item provider, which is essentially a wrapper of the existing `Sitecore.Data.Managers.ItemProvider` overriding `GetItem()`. It is here where other versions/variations of items used via Content Testing are obtained for rendering.
 
 For more information regarding ItemManager and providers, check out [this post](http://kamsar.net/index.php/2013/11/sitecore-data-architecture/) on overall Sitecore data architecture.
 

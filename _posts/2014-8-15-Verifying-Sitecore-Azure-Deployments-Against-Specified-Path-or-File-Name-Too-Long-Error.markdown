@@ -3,6 +3,7 @@ layout: post
 title:  "Verifying Sitecore Azure Deployments Against Specified Path or File Name Too Long Error"
 date:   2014-8-15 10:18:00
 categories: Sitecore Azure
+comments: true
 ---
 
 When running a Sitecore Azure deployment, ever see this error?

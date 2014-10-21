@@ -3,6 +3,7 @@ layout: post
 title:  "Working With The Sitecore Azure API: Settings and Content"
 date:   2014-7-29 10:18:00
 categories: Sitecore Azure
+comments: true
 ---
 
 Details within this post outline how to obtain basic settings, global variables and Azure module items from Sitecore's Azure API. Included are also some pitfalls to be aware of when working with the library.

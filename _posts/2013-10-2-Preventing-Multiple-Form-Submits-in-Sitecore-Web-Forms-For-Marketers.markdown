@@ -3,6 +3,7 @@ layout: post
 title:  "Preventing Multiple Form Submits in Sitecore Web Forms for Marketers"
 date:   2013-10-2 10:18:00
 categories: Sitecore WFFM
+comments: true
 ---
 
 When building forms using Web Forms for Marketers (WFFM), custom save actions can be added to save form data to a database or email a confirmation message. This post details an approach to disable the submit button to prevent multiple save actions from being triggered, such as sending multiple confirmation emails.
