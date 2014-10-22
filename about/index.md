@@ -1,13 +1,11 @@
 ---
 layout: page
-title: About
+title: Release Notes
 tags: [about]
 modified: 2014-10-21T20:53:07.573882-04:00
 comments: true
 image:
-  feature: sample-image-2.jpg
-  credit: WeGraphics
-  creditlink: http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
+  feature: about-me.jpg
 ---
 
 Welcome.
