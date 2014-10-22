@@ -47,6 +47,8 @@ What I'm about:
 * Community code reviews
 * Shooting Nerf guns when I'm in Portland
 
+## Where I Work:
 <a href="http://www.isitedesign.com" title="ISITE Design - A Digital Agency" target="_blank"><img src="http://petersondave.files.wordpress.com/2013/10/isite-banner.jpg" alt="ISITE Design - A Digital Agency" style="border:1px solid #D8D8D8;"></a>
 
+## Other Stuff...
 ![MVP](/assets/images/mvp-2014-technology.jpg)
