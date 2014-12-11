@@ -47,7 +47,7 @@ Obviously, with the addition of new Sitecore 8 features, you'll rely heavily on 
 
 ## Sitecore Client Enhancements
 
-### Experience Editor
+<a name="Experience-Editor"></a>### Experience Editor
 
 The experience editor is accessible from the Sitecore Experience Platform, the start menu or directly within the content editor ribbon. Just as before, the only difference being the rename of <em>Page Editor</em> to <em>Experience Editor</em>.
 
