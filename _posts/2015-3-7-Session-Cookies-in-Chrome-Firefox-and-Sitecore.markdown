@@ -39,7 +39,7 @@ Similar to Chrome's start-up feature, Firefox Session cookies are also saved to 
 
 This feature has also created a <a href="https://bugzilla.mozilla.org/buglist.cgi?bug_id=337551,345830,358042,362212,369289,375182,376605,377233,381940,395749,398827,399748,417711,431547,437911,441544,576845" target="_blank">lively discussion on Mozilla's bug tracker</a>.
 
-##Sitecore xDb
+##Sitecore xDB
 
 How does Sitecore handle session cookies?
 
