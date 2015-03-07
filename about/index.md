@@ -39,16 +39,18 @@ After having attended a couple programming classes at Northeastern University in
 What I'm about:
 
 * Knowledge sharing FTW!
-* White-boarding is a must
-* Paired-programming (in moderation of course)
+* White boarding is a must
+* Paired programming (in moderation of course)
 * Waterfall stinks
 * Agile all the way
 * <a href="https://github.com/PetersonDave?tab=repositories" target="_blank">Open source</a>
 * Community code reviews
 * Shooting Nerf guns when I'm in Portland
 
-## Where I Work:
+## Where I Work
 <a href="http://www.isitedesign.com" title="ISITE Design - A Digital Agency" target="_blank"><img src="http://petersondave.files.wordpress.com/2013/10/isite-banner.jpg" alt="ISITE Design - A Digital Agency" style="border:1px solid #D8D8D8;"></a>
 
-## Other Stuff...
-![MVP](/assets/images/mvp-2014-technology.jpg)
+## Awards
+![MVP-2015](/assets/images/mvp-2015-technology.jpg)
+
+![MVP-2014](/assets/images/mvp-2014-technology.jpg)
