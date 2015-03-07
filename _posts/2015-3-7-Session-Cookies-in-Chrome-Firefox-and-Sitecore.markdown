@@ -43,7 +43,7 @@ This feature has also created a <a href="https://bugzilla.mozilla.org/buglist.cg
 
 How does Sitecore handle session cookies?
 
-Looking at Sitecore DMS, you'll notice the cookie representing the current browsing session for Analytics is a session cookie (SC_ANALYTICS_SESSION). For xDB, the dependency on this cookie has been removed. Session management through both the ```SessionEnd``` and ```VisitEnd``` pipelines invoke ```Sitecore.Analytics.Tracker.EndVisit``` flushing the current session and queueing writes to the Analytics database, removing any potential for browser-specific issues around handling of session cookies.
+Looking at Sitecore DMS, you'll notice the cookie representing the current browsing session for Analytics is a session cookie (SC_ANALYTICS_SESSION_COOKIE). For xDB, the dependency on this cookie has been removed. Session management through both the ```SessionEnd``` and ```VisitEnd``` pipelines invoke ```Sitecore.Analytics.Tracker.EndVisit``` flushing the current session and queueing writes to the Analytics database, removing any potential for browser-specific issues around handling of session cookies.
 
 ##Final Thoughts
 
