@@ -10,9 +10,9 @@ image:
 
 Welcome.
 
-I'm David Peterson, Senior Software Engineer at <a href="http://www.isitedesign.com" target="_blank">ISITE Design</a>. You've somehow stumbled upon my blog on all things Sitecore. You may see some other non-Sitecore related topics from time to time.
+I'm David Peterson, Senior Software Engineer at <a href="http://www.connectivedx.com" target="_blank">Connective DX</a>. You've somehow stumbled upon my blog on all things Sitecore. You may see some other non-Sitecore related topics from time to time.
 
-I used to call the <a href="http://www.isitedesign.com/contact" target="_blank">Boston office</a> my home, but have since moved to <a href="http://www.west-chester.com/" target="_blank">West Chester, PA</a>, where I now work remotely. I'm a Sitecore Technical MVP and run the <a href="http://www.meetup.com/Sitecore-User-Group-Philadelphia/" target="_blank">Philadelphia Sitecore Users Group</a>. 
+I used to call the <a href="http://www.connectivedx.com/about" target="_blank">Boston office</a> my home, but have since moved to <a href="http://www.west-chester.com/" target="_blank">West Chester, PA</a>, where I now work remotely. I'm a Sitecore Technical MVP and run the <a href="http://www.meetup.com/Sitecore-User-Group-Philadelphia/" target="_blank">Philadelphia Sitecore Users Group</a>. 
 
 If you're on social media (who isn't these days?) you'll find me most active here:
 
@@ -48,7 +48,7 @@ What I'm about:
 * Shooting Nerf guns when I'm in Portland
 
 ## Where I Work
-<a href="http://www.isitedesign.com" title="ISITE Design - A Digital Agency" target="_blank"><img src="http://petersondave.files.wordpress.com/2013/10/isite-banner.jpg" alt="ISITE Design - A Digital Agency" style="border:1px solid #D8D8D8;"></a>
+<a href="http://www.connectivedx.com" title="Connective DX" target="_blank"><img src="/images/ConnectiveDX_white.jpg" alt="Connective DX" style="border:1px solid #D8D8D8;width: 435px;height:345px;"></a>
 
 ## Awards
 ![MVP-2015](/assets/images/mvp-2015-technology.jpg)
