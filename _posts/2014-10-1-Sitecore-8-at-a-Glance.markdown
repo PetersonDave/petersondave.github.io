@@ -34,7 +34,7 @@ Many new components were delivered in the new version of Sitecore, as well as, r
 
 ### Existing Features Packaged with Sitecore 8
 
-* [Federated Experience Manager](http://www.isitedesign.com/sitecore/2014/09/30/orchestrating-connected-experiences-with-sitecore/) <em>(available in pre Sitecore 8 versions)</em>
+* [Federated Experience Manager](https://www.connectivedx.com/thinking/posts/2014/09/orchestrating-connected-experiences-with-sitecore) <em>(available in pre Sitecore 8 versions)</em>
 * Social <em>(previously Sitecore Social Connected)</em>
 
 ## General Look and Feel
