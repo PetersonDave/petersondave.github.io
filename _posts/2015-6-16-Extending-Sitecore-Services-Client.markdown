@@ -2,7 +2,7 @@
 layout: post
 title:  "Extending Sitecore.Services.Client"
 date:   2015-06-16 20:35:00
-categories: Experiment Search
+categories: Experiment Sitecore
 comments: true
 ---
 With the release of Sitecore 7.5, Sitecore's core product ships with the SPEAK framework. A dependency for SPEAK components is Sitecore.Services.Client, a REST API exposing Sitecore content for consuming applications. While the main consumer of this service are applications built with the SPEAK framework, developers can leverage this service for other non back-end applications.
