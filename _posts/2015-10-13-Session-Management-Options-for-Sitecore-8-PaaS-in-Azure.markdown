@@ -7,7 +7,7 @@ comments: true
 ---
 Sitecore 8 introduces a significant shift in session management, as both private and shared session providers are introduced to fully support the CMS with xDB integration. If you're considering a PaaS model in Azure and have your own deployment strategy, keep reading. If you're using Sitecore's Azure module, you can pretty much stop here as the decision has been made for you. 
 
-For load balanced on premise solutions, session management is rather straight forward. The two primary options are either Sitecore's custom SQL or Mongo session providers. PaaS solutions in Azure slightly complicate the decision. Throw in Sitecore's xDB cloud edition and your options become more interesting.  In this post, we'll take a look at session management options specific to Sitecore 8 PaaS.
+For load balanced on-premise solutions, session management is rather straight forward. The two primary options are either Sitecore's custom SQL or Mongo session providers. PaaS solutions in Azure slightly complicate the decision. Throw in Sitecore's xDB cloud edition and your options become more interesting.  In this post, we'll take a look at session management options specific to Sitecore 8 PaaS.
 
 #Sitecore Azure Module
 
@@ -15,7 +15,7 @@ Sitecore's Azure module uses a custom In Role Cache provider, defined within a g
 
 #Custom Deployment Strategies
 
-If you have your own in-house deployment strategy outside of the Azure module (such as Azure PowerShell scripts), you have a few options. You can proceed with the recommendation within the Azure module and use the in role cache provider, or you can move forward with one of the standard providers more commonly used with on premise solutions. 
+If you have your own in-house deployment strategy outside of the Azure module (such as Azure PowerShell scripts), you have a few options. You can proceed with the recommendation within the Azure module and use the in role cache provider, or you can move forward with one of the standard providers more commonly used with on-premise solutions. 
 
 ##A Note on Using xDB Cloud Edition
 
@@ -39,7 +39,7 @@ If using Sitecore's hosted xDB solution, this is less likely to be an acceptable
 
 ###SQL
 
-Sitecore's custom SQL session provider allows the ability for Sitecore to flush session data on the ```Session_End``` event. You can continue to use this method in Azure, but the preparation for deployment to Azure SQL involves an additional step than on premise solutions. If you try to export the Sessions database to an SQL Azure .bacpac format, you'll run into an error during the export. In order to successfully export to a .bacpac, delete the ```CreateTables``` stored procedure using the statement below:
+Sitecore's custom SQL session provider allows the ability for Sitecore to flush session data on the ```Session_End``` event. You can continue to use this method in Azure, but the preparation for deployment to Azure SQL involves an additional step than on-premise solutions. If you try to export the Sessions database to an SQL Azure .bacpac format, you'll run into an error during the export. In order to successfully export to a .bacpac, delete the ```CreateTables``` stored procedure using the statement below:
 
 ```DROP PROCEDURE [dbo].[CreateTables]```
 
