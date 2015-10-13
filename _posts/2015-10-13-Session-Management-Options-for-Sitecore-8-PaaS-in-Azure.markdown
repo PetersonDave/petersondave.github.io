@@ -11,11 +11,11 @@ For load balanced on-premise solutions, session management is rather straight fo
 
 #Sitecore Azure Module
 
-Sitecore's Azure module uses a custom In Role Cache provider, defined within a global web.config transformation field labelled "do not edit!" within the client. This value will inject the provider within your Azure package's web.config prior to uploading and transitioning to a cloud service. 
+Sitecore's Azure module uses a custom In-Role Cache provider, defined within a global web.config transformation field labelled "do not edit!" within the client. This value will inject the provider within your Azure package's web.config prior to uploading and transitioning to a cloud service. 
 
 #Custom Deployment Strategies
 
-If you have your own in-house deployment strategy outside of the Azure module (such as Azure PowerShell scripts), you have a few options. You can proceed with the recommendation within the Azure module and use the in role cache provider, or you can move forward with one of the standard providers more commonly used with on-premise solutions. 
+If you have your own in-house deployment strategy outside of the Azure module (such as Azure PowerShell scripts), you have a few options. You can proceed with the recommendation within the Azure module and use the in-role cache provider, or you can move forward with one of the standard providers more commonly used with on-premise solutions. 
 
 ##A Note on Using xDB Cloud Edition
 
@@ -29,7 +29,7 @@ When considering Azure PaaS, we have three options:
 
 	1. Mongo
 	2. SQL
-	3. In Role Cache
+	3. In-Role Cache
 
 ###Mongo
 
@@ -59,9 +59,9 @@ The code below is not supported by Microsoft, our support policy for session sta
 	
 Stick with Sitecore's custom SQL session database and provider. The standard ASP.NET session database is both not supported by Microsoft and Sitecore's custom provider via ```Sesion_End```.
 
-###In Role Cache
+###In-Role Cache
 
-The majority of Sitecore 8 PaaS implementations will rely upon the Sitecore 8 Azure module to deploy to the cloud. The Azure deployment content items contain a global web.config transformation which introduces Sitecore's in role cache provider: ```Sitecore.Azure.SessionStateProviders.AzureInRoleCacheSessionStateProvider, Sitecore.Azure.SessionStateProviders```. You will only see this dependency upon installing the Azure module for Sitecore 8. 
+The majority of Sitecore 8 PaaS implementations will rely upon the Sitecore 8 Azure module to deploy to the cloud. The Azure deployment content items contain a global web.config transformation which introduces Sitecore's in-role cache provider: ```Sitecore.Azure.SessionStateProviders.AzureInRoleCacheSessionStateProvider, Sitecore.Azure.SessionStateProviders```. You will only see this dependency upon installing the Azure module for Sitecore 8. 
 
 ###What About Redis Cache?
 
@@ -84,13 +84,13 @@ Use the table below to assist in determining which method to use.
 	<tbody>
 		<tr>
 			<td>Azure Module</td>
-			<td>In Role Cache</td>
-			<td>In Role Cache</td>
+			<td>In-Role Cache</td>
+			<td>In-Role Cache</td>
 		</tr>
 		<tr>
 			<td>Deployment Scripts</td>
 			<td>Mongo</td>
-			<td>SQL Azure or In Role Cache</td>
+			<td>SQL Azure or In-Role Cache</td>
 		</tr>
 	</tbody>
 </table>
