@@ -76,7 +76,7 @@ Use the table below to assist in determining which method to use.
 <table rules="groups">
 	<thead>
 		<tr>
-			<th style="text-align: left">Hosted</th>
+			<th style="text-align: left">Deployment Method</th>
 			<th style="text-align: left">Mongo Solution</th>
 			<th style="text-align: left">xDB Cloud Edition</th>
 		</tr>
