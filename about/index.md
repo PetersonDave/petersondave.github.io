@@ -10,9 +10,7 @@ image:
 
 Welcome.
 
-I'm David Peterson, Senior Software Engineer at <a href="http://www.connectivedx.com" target="_blank">Connective DX</a>. You've somehow stumbled upon my blog on all things Sitecore. You may see some other non-Sitecore related topics from time to time.
-
-I used to call the <a href="http://www.connectivedx.com/about" target="_blank">Boston office</a> my home, but have since moved to <a href="http://www.west-chester.com/" target="_blank">West Chester, PA</a>, where I now work remotely. I'm a Sitecore Technical MVP and run the <a href="http://www.meetup.com/Sitecore-User-Group-Philadelphia/" target="_blank">Philadelphia Sitecore Users Group</a>. 
+I'm David Peterson, Sitecore Architect at <a href="http://www.atpworldtour.com" target="_blank">ATP World Tour</a>. You've somehow stumbled upon my blog on all things Sitecore. You may see some other non-Sitecore related topics from time to time.
 
 If you're on social media (who isn't these days?) you'll find me most active here:
 
@@ -46,9 +44,6 @@ What I'm about:
 * <a href="https://github.com/PetersonDave?tab=repositories" target="_blank">Open source</a>
 * Community code reviews
 * Shooting Nerf guns when I'm in Portland
-
-## Where I Work
-<a href="http://www.connectivedx.com" title="Connective DX" target="_blank"><img src="/images/ConnectiveDX_white.jpg" alt="Connective DX" style="border:1px solid #D8D8D8;width: 435px;height:345px;"></a>
 
 ## Awards
 ![MVP-2015](/assets/images/mvp-2015-technology.jpg)
