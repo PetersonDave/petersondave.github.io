@@ -29,7 +29,7 @@ with
 
 Altering the behavior of item bucket settings (/sitecore/system/Settings/Buckets/Item Buckets Settings) for the field _Show Search Results In_ to _New Content Editor_ produces the issue of not being able to search for results within the Multilist with Search field. 
 
-To reproduce the issue, we first searched for a result within a bucketable item. Opening one of the items returned in the search results to a new content editor window creates a scenario where any subsequent searches (via the Multilist with Search field, for example) are conducted under the context of an item not included a registered search index. This then executes against the core database instead of the intended target.
+To reproduce the issue, we first searched for a result within a bucketable item. Opening one of the items returned in the search results to a new content editor window creates a scenario where any subsequent searches (via the Multilist with Search field, for example) are conducted under the context of an item not included within a registered search index. This then executes against the core database instead of the intended target.
 
 Applying <a href = "https://kb.sitecore.net/articles/755636" target="_blank">a patch</a> produced by Sitecore to introduce an index fallback resolves the issue. In our case, the item's parent Bucket template was not included in the templates for the crawler configuration of our master index. 
 
