@@ -11,7 +11,7 @@ While you can use Sitecore.Services.Client for public facing applications, there
 
 The approach detailed within the post is purely experimental. Similar approaches should only be considered if validated against all other avenues for using Sitecore as a service. Consider ASP.NET MVC controller actions through attribute routing or implementing a custom ASP.NET Web API solution for CRUD operations.
 
-#Obtaining Item References
+# Obtaining Item References
 The default implementation exposes content as JSON through a REST API where you can obtain content by:
 
 	1. Item ID
@@ -22,10 +22,10 @@ The resulting JSON returns a set of data inclusive of standard Sitecore system r
 
 For example, consider the following API call and its response:
 
-##Request
+## Request
 _http://sitecore8/sitecore/api/ssc/item/?path=/sitecore/content/home/sample-item_
 
-##Response
+## Response
 {% highlight json %}
 {  
    "ItemID":"51ece5bb-1da7-4b7a-a168-cf90cd05f692",
@@ -50,7 +50,7 @@ _http://sitecore8/sitecore/api/ssc/item/?path=/sitecore/content/home/sample-item
 
 Notice how the multilist field "Relationship" outputs the item reference ids and not the actual content. To obtain the related item content, we would have to invoke the service for each item reference in the API response.
 
-#Extending Sitecore.Services.Client
+# Extending Sitecore.Services.Client
 In order to include related content in our response, we'll have to override Sitecore's default implementation. 
 
 We can do this by taking the following actions:
@@ -66,7 +66,7 @@ Required References:
 	3. Sitecore.ContentSearch.Linq
 	4. Ninject.Web.WebApi (DI for this example)
 
-##Model Factory
+## Model Factory
 We'll need a model factory to read in the related item content and append a new field to the ```ItemModel``` object. The ```ItemModel``` itself is a dictionary of key/value pairs where the key is the field name and the value is the field value. Adding a new field to our model is simple enough as we don't have to extend the model itself. It already supports dynamically adding fields and their values. 
 
 The ```create``` method below iterates over each field and performs a lookup for related content items via ```ExpandReferencedItems```. The resulting array of items are then added to a new field ```RelationshipItems``` within our ```ItemModel```.
@@ -143,7 +143,7 @@ public class CustomModelFactory : IModelFactory
 }
 {% endhighlight %}
 
-##Handler Provider
+## Handler Provider
 With the Model Factory in place, we'll next need a Handler Provider to explicitly use the factory when requests are received for item lookup by id, path or by child item.
 
 {% highlight c# %}
@@ -197,7 +197,7 @@ public class CustomHandlerProvider : IHandlerProvider
 }
 {% endhighlight %}
 
-##Dependency Injection
+## Dependency Injection
 We then bind our new handler provider to Sitecore's ```IHandlerProvider```.
 
 {% highlight c# %}
@@ -212,7 +212,7 @@ private static IKernel CreateKernel()
 }
 {% endhighlight %}
 
-#Final Result
+# Final Result
 The ```RelationshipItems``` field now displays all related content, eliminating the need for multiple Web API calls.
 
 {% highlight json %}

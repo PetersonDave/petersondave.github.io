@@ -15,12 +15,12 @@ Editors were getting inconsistent behavior in how results were displayed when se
 
 Sitecore support issued a patch referencing issue #398622, in which the Solr provider was overridden using a custom assembly. The following references were replaced:
 
+1. Search Provider
 ```Sitecore.ContentSearch.SolrProvider.SolrSearchIndex, Sitecore.ContentSearch.SolrProvider```
 with
 ```Sitecore.Support.ContentSearch.SolrProvider.SolrSearchIndex, Sitecore.Support.398622```
 
-and
-
+2. Switch on Rebuild Provider
 ```Sitecore.ContentSearch.SolrProvider.SwitchOnRebuildSolrSearchIndex, Sitecore.ContentSearch.SolrProvider```
 with
 ```Sitecore.Support.ContentSearch.SolrProvider.SwitchOnRebuildSolrSearchIndex, Sitecore.Support.398622```
