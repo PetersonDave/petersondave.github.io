@@ -10,11 +10,13 @@ We had a very unique situation in that we were integrating one Sitecore instance
 
 To get past these commonalities between item ids, the following script was used to eliminate these conflicts by generating new items and moving content over to the newly generated items:
 
-	1. Create the new item with a temp name
-	2. Update field values
-	3. Move all child items to the new item
-	4. Rename the original item
-	5. Rename the new item to the original name
+<ol>
+	<li>Create the new item with a temp name</li>
+	<li>Update field values</li>
+	<li>Move all child items to the new item</li>
+	<li>Rename the original item</li>
+	<li>Rename the new item to the original name</li>
+<ol>
 
 Note that this script does not accommodate for moving of referrers of the original item to the new one. A separate process was used to resolve those issue before removing the original items.
 

@@ -9,10 +9,12 @@ As part of integrating one Sitecore instance into another, reorganization was ne
 
 The approach we took was to script the move of items to site-specific folders, ensuring no conflicts were encountered. The following scripts were executed in three steps:
 
-	1. Updating template source fields to point to a new path
-	2. Remove unnecessary path references in image fields (carry-over from a pre-Sitecore 7 deployment. This was deprecated in Sitecore 8)
-	3. Moving of the media library to the new path
-
+<ol>
+	<li>Updating template source fields to point to a new path</li>
+	<li>Remove unnecessary path references in image fields (carry-over from a pre-Sitecore 7 deployment. This was deprecated in Sitecore 8)</li>
+	<li>Moving of the media library to the new path</li>
+</ol>
+	
 # Step 1: Update Template Image Source Values
 
 The following function accepts the name of a site as a parameter and uses that to append to a default ```/sitecore/Media Library/sites``` folder for site-specific media item storage. That value is then used to replace existing, more generic references:

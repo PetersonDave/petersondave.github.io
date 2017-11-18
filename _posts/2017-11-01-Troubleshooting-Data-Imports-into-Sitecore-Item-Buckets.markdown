@@ -27,10 +27,12 @@ Overriding the default bucket folder naming convention using the item name creat
 
 By default, Sitecore uses date/time to determine bucket folders
 
+{% highlight xml %}
 <setting name="BucketConfiguration.BucketFolderPath" value="yyyy\/MM\/dd\/HH\/mm" patch:source="Sitecore.Buckets.config"/>
+{% endhighlight %}
 
 Using Sitecore's item bucket settings (/sitecore/system/Settings/Buckets/Item Buckets Settings), we were overriding the folder naming convention using the first two characters of the item's name. 
 
--- image --
+![buckets rules](/assets/images/buckets-rules.png)
 
 Conversion of the item name to replace spaces with hypens during the import process ensured proper item naming standards, however, failed to create buckets folders in which an item contained a space in the second position. This resulted in an attempt to create a bucket parent folder of "-", which is invalid and generates an exception during item creation.
