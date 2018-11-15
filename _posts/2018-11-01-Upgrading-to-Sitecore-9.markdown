@@ -8,15 +8,14 @@ comments: true
 
 Recently, we upgraded Sitecore form 8.1 update 3 to 9.0 update 1. Note this post deals with an XM instance. XP upgrades may follow a similar path, however, XP specific upgrade tasks are not covered here.
 
-Phases of a Sitecore Upgrade
+## Phases of a Sitecore Upgrade
+
 - Phase 1: Planning and Identifying Scope
 - Phase 2: Development and Validation
 - Phase 3: Execution
 
 
 # Phase 1: Planning and Identifying Scope
-
-## Planning
 
 The general approach we took for the upgrade path was to execute in the following order:
 
@@ -55,7 +54,7 @@ While Sitecore provides the ability to update the filesystem by using the wizard
 
 The following are application specific changes implemented while upgrading the .NET solution.
 
-1. Invalid Internal Link Field Values
+### 1. Invalid Internal Link Field Values
 
 In our solution, we had internal link field values which had "<internalLink />" without any XML attributes. If left unchanged, publishing will fail during the upgrade. This issue is not limited to just our solution, as Sitecore has confirmed this a known issue. To resolve, they actually issued us a modified Sitecore.Kernel.dll, with changes limited to null checking during the building of internal links:
 
@@ -134,7 +133,7 @@ Get-ChildItem -Path $root.ProviderPath -Version * -Language * -Recurse | HasBrok
 Write-Host "[done]" -foreground green
 {% endhighlight %}
 
-2. Deep Linking Always Enabled for AddItemLinkReferences Pipeline Processor
+### 2. Deep Linking Always Enabled for AddItemLinkReferences Pipeline Processor
 
 Disable deep linking, as this will be enabled by default with 9.0 update 1. This is significant for those who configure publishing to trigger based on submit actions in workflow, especially if you're publishing with related items. To disable this, patch in the following to disable deep scanning.
 
@@ -144,7 +143,7 @@ Disable deep linking, as this will be enabled by default with 9.0 update 1. This
 </processor>
 {% endhighlight %}
 
-3. IoC Container Registration via Pipeline Processor
+### 3. IoC Container Registration via Pipeline Processor
 
 No longer should this be executed via application start, as application-specific dependency registration will be appended to the container Sitecore is using at startup. This means registration via pipeline processors. Wire-up the registration processor using a patch file like the one below. There are plenty of articles covering dependency injection with Sitecore 9, so I won't go into specifics here.
 
@@ -161,11 +160,11 @@ No longer should this be executed via application start, as application-specific
 </configuration>
 {% endhighlight %}
 
-4. Resolving Wildcard Items in Sitecore MVC
+### 4. Resolving Wildcard Items in Sitecore MVC
 
 Read <a href="https://jammykam.wordpress.com/2017/08/02/sitecore-mvc-context-item/" target="_blank">this thoughtful post on resolving of the context item</a> in Sitecore MVC. Specifically for our solution, wildcard items were not using the proper mvc.getPageItem processor.
 
-5. Solr Search Logs Grow Excessively
+### 5. Solr Search Logs Grow Excessively
 
 Also a known issue with Sitecore 9 update 1, we needed to suppress warning in our search logs. Use the following patch
 
@@ -185,7 +184,7 @@ Also a known issue with Sitecore 9 update 1, we needed to suppress warning in ou
 </configuration>
 {% endhighlight %}
 
-6. Disable Device Detection
+### 6. Disable Device Detection
 
 We don't use this feature. It ships enabled, so we chose to disable using the follow patch:
 
@@ -201,7 +200,7 @@ We don't use this feature. It ships enabled, so we chose to disable using the fo
 </configuration>
 {% endhighlight %}
 
-7. Reduce UpdateListOperationsAgent Job Frequency
+### 7. Reduce UpdateListOperationsAgent Job Frequency
 
 We don't use this feature, yet the job runs multiple times a minute. Added this to reduce the entries in the logs
 
@@ -213,7 +212,7 @@ We don't use this feature, yet the job runs multiple times a minute. Added this 
 </scheduling>
 {% endhighlight %}
 
-8. Increase Solr Timeout
+### 8. Increase Solr Timeout
 
 With Sitecore's default Solr timeout, index rebuilds will fail during the optimization step.
 
@@ -232,7 +231,7 @@ Use the following patch to update to 10 minutes
 </configuration>
 {% endhighlight %}
 
-9. Reduce Frequency of Indexing State Switcher Agent
+### 9. Reduce Frequency of Indexing State Switcher Agent
 
 This job runs more often than it needs to for us, filling the logs with unnecessary details. Add this transform:
 
