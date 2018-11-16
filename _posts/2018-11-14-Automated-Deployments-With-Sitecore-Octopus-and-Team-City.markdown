@@ -85,16 +85,9 @@ Configuring Octopus Deploy, we had the following set of goals:
 
 Notice the semantic versioning of the packages and prefixed with the appriate channel name. GitVersion is critical to the naming and placement of these packages for octopus in their respective channels.
 
-#### Alpha Channel
 ![alpha](/assets/images/alpha-channel.png)
-
-#### Beta Channel
 ![beta](/assets/images/beta-channel.png)
-
-#### Hot Fix Channel
 ![hotfix](/assets/images/hotfix-channel.png)
-
-#### Production Channel
 ![production](/assets/images/production-channel.png)
 
 ### Process
@@ -106,7 +99,7 @@ The following is a high-level overview of what our deployment process looks like
 3. Stop IIS
 4. Deploy Unicorn package
 5. Clear web root folders
-6. Deploy website package
+6. Deploy website package (with Octopus transformations)
 7. Remove configuration transforms
 8. Start IIS
 9. Verify Sitecore Login Page (CM only)
@@ -116,3 +109,5 @@ The following is a high-level overview of what our deployment process looks like
 13. Notify via Slack
 
 The process for deployments leverages OOTB Octopus configuration transformation features to <a href="https://octopus.com/docs/deployment-process/variables/environment-specific-configuration-transforms-with-sensitive-values-in-octopus" target="_blank">transform config files by environment</a>. We commit environment-specific configuration transforms for this purpose and let Octopus swap out values with properly scoped variables.
+
+Obviously, each organization will have different sets of needs for deployments and automation. Keep your requirements simply at first and expand as your process matures. 
