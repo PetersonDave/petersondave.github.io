@@ -5,9 +5,7 @@ date:   2018-11-27 20:00:00
 categories: Sitecore
 comments: true
 ---
-Stripping Unwanted HTML From Sitecore Rich Text Fields
-
-A recent project asked to share news article content between our public websites and a Xamarin app, which consumes Sitecore content through an API. Our article content, stored as Rich Text, can contain markup which does not translate well to a mobile app. To resolve, we introduced a new field to store the sanitized markup, updated during the item saving event handler. Below is the implementation. Fortis is used as the item wrappring library.
+A recent project requirement involved sharing of news article content between our public websites and a Xamarin app (which consumes Sitecore content through an API). Our article content, stored as Rich Text, can contain markup which does not translate well to a mobile app. To resolve, we introduced a new field to store the sanitized markup, updated during the item saving event handler. Below is the implementation. Fortis is used as the item wrappring library.
 
 {% highlight c# %}
 public class SanitizeArticleForAppHandler
